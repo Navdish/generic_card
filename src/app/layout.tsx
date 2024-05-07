@@ -1,4 +1,7 @@
-
+"use client"
+import BarComponent from '@/component/BarComponent';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import './global.css'
 
 export default function RootLayout({
   children,
@@ -7,7 +10,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body >
+        <AppRouterCacheProvider>
+          <BarComponent>
+          {children}
+          </BarComponent>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }

@@ -1,0 +1,31 @@
+
+
+.bar {
+    background-color:#01579B;
+    width:100%;
+    color: white;
+    height:64px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menuButton {
+    color: white;
+}
+
+.fullContent {
+    display: flex;
+}
+
+.sidebar {
+    background-color: green;
+    min-height: calc(100vh - 64px) ;
+    width: 300px;
+    margin: 1px solid black;
+}
+
+.content {
+    background-color: grey;
+}
